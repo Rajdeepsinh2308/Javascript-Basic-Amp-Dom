@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #div{
+        height: 100vh;
+        width: 100%;
+        background-color: #532187;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #one{
+        height: 100px;
+        width: 400px;
+        border: 2px solid black;
+        background-color: aqua;
+        font-size: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+</style>
+<body>
+    <div id="div" >
+    <div id="one" onclick="Toggle()"> Change BG Color</div>
+</div>
+
+    <!-- <button onclick="Toggle()">Toggle</button> -->
+    
+</body>
+<script>
+    function Toggle()
+    {
+    var value = document.getElementById("div") 
+        
+     if(value.style.backgroundColor == "red")
+     {
+       
+        value.style.backgroundColor = "blue"
+     } 
+     else{
+        value.style.backgroundColor = "red"
+
+     }
+     
+    }
+</script>
+</html>
